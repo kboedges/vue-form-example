@@ -11,11 +11,15 @@ export default new Vuex.Store({
       age: 28,
       pets: ["Marcus", "Fleur", "Leah"],
       car: "Ford"
-    }
+    },
+    color: "#eeeeee"
   },
   mutations: {
     saveName(state, payload) {
       state.user.name = payload;
+    },
+    saveColor(state, payload) {
+      state.color = payload;
     }
   },
   actions: {},

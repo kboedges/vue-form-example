@@ -2,6 +2,7 @@
   <div class="coolform">
     <InputField v-bind:userInfo="user.name"/>
     <InputField v-bind:userInfo="user.car"/>
+    <ColorPicker/>
   </div>
 </template>
 
@@ -19,6 +20,9 @@ export default {
     user() {
       return this.$store.state.user;
     }
+  },
+  mounted() {
+    console.log(this.$store.state.user.name);
   }
 };
 </script>
